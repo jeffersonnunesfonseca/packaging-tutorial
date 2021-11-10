@@ -1,19 +1,11 @@
-from setuptools import setup, find_packages
+import setuptools
 
-setup(
+setuptools.setup(
     name='teste',
     version='1',
-    url='https://github.com/gorillascode/quiteja-crediativos-ws-lib-py',
-    license='',
-    author='GorillasCode Software Design',
-    author_email='devops@gorillascode.com',
-    description='Biblioteca para integração com o Webservice da CrediAtivos',
-    packages=find_packages(),
-    include_package_data=True,
-    install_requires=[
-        'requests>=2.21.0',
-        'zeep==3.4.0',
-        'python-dateutil==2.8.1',
-        'cachetools>=3.1.1'
-    ]
+    url='https://github.com/jeffersonnunesfonseca/packaging-tutorial.git',
+    author='Jefferson Nunes Fonseca',
+    author_email='jeffersonnunesfonseca@gmail.com',
+    description='Exemplo de como transformar um módulo em package',
+    packages=setuptools.find_packages(where="src")
 )
