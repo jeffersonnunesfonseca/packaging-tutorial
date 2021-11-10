@@ -2,10 +2,12 @@ import setuptools
 
 setuptools.setup(
     name='teste',
-    version='1',
-    url='https://github.com/jeffersonnunesfonseca/packaging-tutorial.git',
+    version='0.0.1',
+    url='https://github.com/jeffersonnunesfonseca/packaging-tutorial',
     author='Jefferson Nunes Fonseca',
     author_email='jeffersonnunesfonseca@gmail.com',
     description='Exemplo de como transformar um módulo em package',
-    packages=setuptools.find_packages(where="src")
+    package_dir={"": "src"},
+    packages=setuptools.find_packages(where="src"),
+    python_requires=">=3.6",
 )
